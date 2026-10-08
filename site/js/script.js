@@ -1,5 +1,5 @@
 /**
- * Jordan Lee Portfolio — script.js
+ * Patrick John Salutan Portfolio — script.js
  * Handles:
  *  1. Theme toggle (dark / light) with localStorage persistence
  *  2. Scroll-based nav shrink / shadow
@@ -160,7 +160,7 @@ const qsa = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   if (!btn) return;
 
   btn.addEventListener('click', () => {
-    // Toast confirms download started; replace assets/resume.pdf with your real PDF
+    // Toast confirms the current resume download started.
     showToast('Download started!');
   });
 

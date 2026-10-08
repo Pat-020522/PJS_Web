@@ -1,5 +1,5 @@
 /* ============================================================
-   JORDAN LEE — Portfolio Stylesheet
+   PATRICK JOHN SALUTAN — Portfolio Stylesheet
    Sections:
    1. CSS Variables & Themes
    2. Reset & Base
@@ -765,8 +765,66 @@ h1, h2, h3 {
   border: 1px solid var(--border);
 }
 
+/* ── 7. EXPERIENCE ────────────────────────────────────────── */
 
-/* ── 7. RESUME ───────────────────────────────────────────── */
+#experience {
+  padding: var(--section-pad) 0;
+  border-top: 1px solid var(--border);
+}
+
+.experience-card {
+  padding: 2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+}
+
+.experience-heading {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience-heading h3 {
+  font-size: 1.35rem;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.experience-heading p,
+.experience-meta span {
+  color: var(--text-secondary);
+}
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  color: var(--text-primary);
+}
+
+.experience-card ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.experience-card li + li {
+  margin-top: 0.55rem;
+}
+
+@media (max-width: 599px) {
+  .experience-meta {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+
+/* ── 8. RESUME ───────────────────────────────────────────── */
 
 #resume {
   padding: var(--section-pad) 0;
@@ -805,7 +863,7 @@ h1, h2, h3 {
 }
 
 
-/* ── 8. TOOLS & SKILLS ───────────────────────────────────── */
+/* ── 9. TOOLS & SKILLS ───────────────────────────────────── */
 
 #tools {
   padding: var(--section-pad) 0;
@@ -876,7 +934,7 @@ h1, h2, h3 {
 }
 
 
-/* ── 9. FOOTER ───────────────────────────────────────────── */
+/* ── 10. FOOTER ───────────────────────────────────────────── */
 
 #site-footer {
   border-top: 1px solid var(--border);
@@ -930,7 +988,7 @@ h1, h2, h3 {
 }
 
 
-/* ── 10. ANIMATIONS & SCROLL REVEAL ─────────────────────── */
+/* ── 11. ANIMATIONS & SCROLL REVEAL ─────────────────────── */
 
 /* Initial state — elements start hidden and shifted down */
 .reveal-up {
@@ -969,7 +1027,7 @@ body {
 }
 
 
-/* ── 11. RESPONSIVE ──────────────────────────────────────── */
+/* ── 12. RESPONSIVE ──────────────────────────────────────── */
 
 /* ── Tablet (600px+) ── */
 @media (min-width: 600px) {
